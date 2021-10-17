@@ -1,7 +1,7 @@
 // @flow
 
-import Day from "./Day";
-
+import Week from "./Week";
+import { addDays, format, getDay, getDaysInMonth, isSunday } from "date-fns";
 import * as React from "react";
 
 export type DaysToMark = {
@@ -12,15 +12,36 @@ export type DaysToMark = {
 const styles = {
   container: {
     border: "1px solid black",
+    width: "90%",
   },
 };
 
 type Props = {
-  id: number,
+  date: Date,
   daysToMark?: $ReadOnlyArray<DaysToMark>,
 };
 
-export default function Month({ id, daysToMark }: Props): React$Element<"div"> {
+export default function Month({
+  date,
+  daysToMark,
+}: Props): React$Element<"div"> {
+  const weeks = getWeeks(date);
+
+  return (
+    <div>
+      <table boder="1" style={styles.container}>
+        <Title />
+        <tbody>
+          {weeks.map((week) => (
+            <Week key={week.toString()} week={week} />
+          ))}
+        </tbody>
+      </table>
+    </div>
+  );
+}
+
+function Title() {
   const days = [
     "Monday",
     "Tuesday",
@@ -30,34 +51,27 @@ export default function Month({ id, daysToMark }: Props): React$Element<"div"> {
     "Saturday",
     "Sunday",
   ];
-
-  const weeks = [...Array(5).keys()];
-
   return (
-    <div>
-      <table boder="1" style={styles.container}>
-        <thead>
-          <tr>
-            {days.map((d) => (
-              <th key={d}>{d[0]}</th>
-            ))}
-          </tr>
-        </thead>
-        <tbody>
-          {weeks.map((w) => (
-            <Week key={w} />
-          ))}
-        </tbody>
-      </table>
-    </div>
+    <thead>
+      <tr>
+        {days.map((d) => (
+          <th key={d}>{d[0]}</th>
+        ))}
+      </tr>
+    </thead>
   );
 }
 
-function Week() {
-  const days = [...Array(7).keys()].map((k) => (
-    <td key={k}>
-      <Day id={k} text={k.toString()} />
-    </td>
-  ));
-  return <tr>{days}</tr>;
+function getWeeks(date: Date) {
+  const daysInMonth = getDaysInMonth(date);
+  const weeks = [...Array(6)].map(() => [...Array(7)]);
+  for (let i = 0, week = 0; i < daysInMonth; i++) {
+    const currentDate = addDays(date, i);
+    const lastDay = isSunday(currentDate);
+    const dayPosition = lastDay ? 6 : getDay(currentDate) - 1;
+    weeks[week][dayPosition] = currentDate;
+    week += lastDay ? 1 : 0;
+  }
+
+  return weeks;
 }

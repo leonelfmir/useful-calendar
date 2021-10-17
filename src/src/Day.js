@@ -1,7 +1,15 @@
 // @flow
 
+import { format } from "date-fns";
 import * as React from "react";
-
-export default function Cell({ id, text }: { id: number, text?: string }): any {
-  return <div>{text}</div>;
+const styles = {
+  container: {
+    display: "flex",
+    justifyContent: "center",
+    height: "20px",
+  },
+};
+export default function Day({ date }: { date: ?Date }): any {
+  const day = date != null ? format(date, "d") : null;
+  return <div style={styles.container}>{day}</div>;
 }
