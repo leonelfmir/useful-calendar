@@ -16,6 +16,7 @@ function App(): any {
           dates: year.dates.map((date) => {
             const da = Date.parse(date.date);
             const dd = { ...date, date: da };
+            return dd;
           }),
         };
       });
