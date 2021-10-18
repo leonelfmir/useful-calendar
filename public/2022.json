@@ -1,0 +1,31 @@
+[
+  {
+    "date": "Monday, January 3, 2022",
+    "description": "New Year’s Day (observed)"
+  },
+  {
+    "date": "Monday, January 17, 2022",
+    "description": "Martin Luther King Jr. Day"
+  },
+  { "date": "Monday, February 21, 2022", "description": "Presidents’ Day" },
+  { "date": "Monday, May 30, 2022", "description": "Memorial Day" },
+  { "date": "Monday, July 4, 2022", "description": "Independence Day" },
+  { "date": "Monday, September 5, 2022", "description": "Labor Day" },
+  { "date": "Thursday, November 24, 2022", "description": "Thanksgiving Day" },
+  {
+    "date": "Friday, November 25, 2022",
+    "description": "Day after Thanksgiving"
+  },
+  {
+    "date": "Friday, December 23, 2022",
+    "description": "Christmas Eve (observed)"
+  },
+  {
+    "date": "Monday, December 26, 2022",
+    "description": "Christmas Day (observed)"
+  },
+  {
+    "date": "Friday, December 30, 2022",
+    "description": "New Year's Eve (observed)"
+  }
+]

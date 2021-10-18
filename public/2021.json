@@ -1,0 +1,31 @@
+[
+  { "date": "Friday, January 1, 2021", "description": "New Year’s Day" },
+  {
+    "date": "Monday, January 18, 2021",
+    "description": "Martin Luther King Jr. Day"
+  },
+  { "date": "Monday, February 15, 2021", "description": "Presidents’ Day" },
+  { "date": "Friday, May 28, 2021", "description": "Company-Wide Day Off" },
+  { "date": "Monday, May 31, 2021", "description": "Memorial Day" },
+  { "date": "Friday, July 2, 2021", "description": "Company-Wide Day Off" },
+  {
+    "date": "Monday, July 5, 2021",
+    "description": "Independence Day (observed)"
+  },
+  {
+    "date": "Friday, September 3, 2021",
+    "description": "Company-Wide Day Off"
+  },
+  { "date": "Monday, September 6, 2021", "description": "Labor Day" },
+  { "date": "Thursday, November 25, 2021", "description": "Thanksgiving Day" },
+  {
+    "date": "Friday, November 26, 2021",
+    "description": "Day after Thanksgiving"
+  },
+  { "date": "Friday, December 24, 2021", "description": "Christmas Eve" },
+  {
+    "date": "Monday, December 27, 2021",
+    "description": "Christmas Day (observed)"
+  },
+  { "date": "Friday, December 31, 2021", "description": "New Year’s Eve" }
+]

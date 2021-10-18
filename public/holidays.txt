@@ -1,0 +1,29 @@
+2021 US holidays
+Date	Holiday
+Friday, January 1, 2021	New Year’s Day
+Monday, January 18, 2021	Martin Luther King Jr. Day
+Monday, February 15, 2021	Presidents’ Day
+Friday, May 28, 2021	Company-Wide Day Off
+Monday, May 31, 2021	Memorial Day
+Friday, July 2, 2021	Company-Wide Day Off
+Monday, July 5, 2021	Independence Day (observed)
+Friday, September 3, 2021	Company-Wide Day Off
+Monday, September 6, 2021	Labor Day
+Thursday, November 25, 2021	Thanksgiving Day
+Friday, November 26, 2021	Day after Thanksgiving
+Friday, December 24, 2021	Christmas Eve
+Monday, December 27, 2021	Christmas Day (observed)
+Friday, December 31, 2021	New Year’s Eve
+2022 US holidays
+Date	Holiday
+Monday, January 3, 2022	New Year’s Day (observed)
+Monday, January 17, 2022	Martin Luther King Jr. Day
+Monday, February 21, 2022	Presidents’ Day
+Monday, May 30, 2022	Memorial Day
+Monday, July 4, 2022	Independence Day
+Monday, September 5, 2022	Labor Day
+Thursday, November 24, 2022	Thanksgiving Day
+Friday, November 25, 2022	Day after Thanksgiving
+Friday, December 23, 2022	Christmas Eve (observed)
+Monday, December 26, 2022	Christmas Day (observed)
+Friday, December 30, 2022	New Year's Eve (observed)
