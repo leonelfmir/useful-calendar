@@ -28,15 +28,11 @@ function App(): any {
     return null;
   }
 
-  const year = 2021;
-  const holidays = data.find((d) => d.year === year)?.dates;
-  if (holidays == null) {
-    return null;
-  }
-
   return (
     <LayOut>
-      <Year year={year} daysToMark={holidays} />
+      {data.map((d) => (
+        <Year key={d.year} year={d.year} daysToMark={d.dates} />
+      ))}
     </LayOut>
   );
 }

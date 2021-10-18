@@ -17,6 +17,7 @@ export default function NexDay({ daysToMark }: Props): any {
   if (daysToMark == null || daysToMark.length === 0) {
     return null;
   }
+
   const dates = daysToMark.map((d) => d.date) ?? [];
   const nextDate = closestIndexTo(new Date(), dates);
   const closest = daysToMark[nextDate];
