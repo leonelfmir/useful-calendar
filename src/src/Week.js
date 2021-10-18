@@ -1,18 +1,18 @@
 // @flow
 
+import type { DaysToMark } from "./Year";
+
 import Day from "./Day";
 
-import { addDays, getMonth, getWeek } from "date-fns";
 import * as React from "react";
-
-export default function Week({
-  week,
-}: {
+type Props = {
   week: $ReadOnlyArray<Date>,
-}): React$Element<"tr"> {
+  daysToMark?: DaysToMark,
+};
+export default function Week({ week, ...props }: Props): React$Element<"tr"> {
   const days = week.map((day, i) => (
     <td key={day?.toString() ?? i}>
-      <Day key={day?.toString() ?? i} date={day} />
+      <Day {...props} key={day?.toString() ?? i} date={day} />
     </td>
   ));
   return <tr>{days}</tr>;

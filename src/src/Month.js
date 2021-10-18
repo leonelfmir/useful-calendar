@@ -1,39 +1,42 @@
 // @flow
 
 import Week from "./Week";
+import type { DaysToMark } from "./Year";
 import { addDays, format, getDay, getDaysInMonth, isSunday } from "date-fns";
 import * as React from "react";
 
-export type DaysToMark = {
-  color: string,
-  day: Date,
-};
-
 const styles = {
   container: {
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "center",
     border: "1px solid black",
-    width: "90%",
+    marginTop: "5px",
+  },
+  title: {
+    display: "flex",
+    height: "20px",
+    justifyContent: "center",
+    textTransform: "uppercase",
   },
 };
 
 type Props = {
   date: Date,
-  daysToMark?: $ReadOnlyArray<DaysToMark>,
+  daysToMark?: DaysToMark,
 };
 
-export default function Month({
-  date,
-  daysToMark,
-}: Props): React$Element<"div"> {
+export default function Month({ date, ...props }: Props): React$Element<"div"> {
   const weeks = getWeeks(date);
 
   return (
-    <div>
-      <table boder="1" style={styles.container}>
+    <div style={styles.container}>
+      <div style={styles.title}>{format(date, "MMMM")}</div>
+      <table boder="1">
         <Title />
         <tbody>
-          {weeks.map((week) => (
-            <Week key={week.toString()} week={week} />
+          {weeks.map((week, i) => (
+            <Week {...props} key={i} week={week} />
           ))}
         </tbody>
       </table>
