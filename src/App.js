@@ -10,7 +10,23 @@ function App(): any {
   const holidays: DaysToMark = [
     {
       date: new Date(2021, 10, 25),
-      describe: "Thanksgiving",
+      description: "Thanksgiving",
+    },
+    {
+      date: new Date(2021, 10, 26),
+      description: "After Thanksgiving",
+    },
+    {
+      date: new Date(2021, 11, 24),
+      description: "Other",
+    },
+    {
+      date: new Date(2021, 11, 27),
+      description: "Other",
+    },
+    {
+      date: new Date(2021, 11, 31),
+      description: "Other",
     },
   ];
   return (
