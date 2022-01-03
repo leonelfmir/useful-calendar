@@ -5,12 +5,17 @@ import * as React from "react";
 import { useEffect, useState } from "react";
 import Year from "./src/Year";
 import type { DaysToMark } from "./src/Year";
+import { getYear } from "date-fns";
 
 function App(): any {
   const [data, setData] = useState<?InputData>(null);
   useEffect(() => {
+    const currentYear = getYear(new Date());
     getData().then((yearsData) => {
       const d = yearsData.map((year) => {
+        if (year.year < currentYear) {
+          return null;
+        }
         return {
           ...year,
           dates: year.dates.map((date) => {
@@ -20,7 +25,8 @@ function App(): any {
           }),
         };
       });
-      setData(d);
+      const valideYears = d.filter(Boolean);
+      setData(valideYears);
     });
   }, [setData]);
 
