@@ -1,0 +1,35 @@
+{
+  "year": 2023,
+  "dates": [
+    {
+      "date": "Monday, January 2, 2023",
+      "description": "New Year's Day (observed)"
+    },
+    {
+      "date": "Monday, January 16, 2023",
+      "description": "Martin Luther King Jr. Day"
+    },
+    { "date": "Monday, February 20, 2023", "description": "Presidents’ Day" },
+    { "date": "Monday, May 29, 2023", "description": "Memorial Day" },
+    { "date": "Monday, June 19, 2023", "description": "Juneteenth" },
+    { "date": "Tuesday, July 4, 2023", "description": "Independence Day" },
+    { "date": "Monday, September 4, 2023", "description": "Labor Day" },
+    {
+      "date": "Thursday, November 23, 2023",
+      "description": "Thanksgiving Day"
+    },
+    {
+      "date": "Friday, November 24, 2023",
+      "description": "Day after Thanksgiving"
+    },
+    {
+      "date": "Friday, December 22, 2023",
+      "description": "Christmas Eve (observed)"
+    },
+    { "date": "Monday, December 25, 2023", "description": "Christmas Day" },
+    {
+      "date": "Friday, December 29, 2023",
+      "description": "New Year's Eve (observed)"
+    }
+  ]
+}

@@ -8,9 +8,14 @@
     "description": "Martin Luther King Jr. Day"
   },
   { "date": "Monday, February 21, 2022", "description": "Presidents’ Day" },
+  { "date": "Friday, March 18, 2022", "description": "Meta Day" },
+  { "date": "Friday, April 29, 2022", "description": "Meta Day" },
+  { "date": "Friday, May 27, 2022", "description": "Meta Day" },
   { "date": "Monday, May 30, 2022", "description": "Memorial Day" },
+  { "date": "Friday, July 1, 2022", "description": "Meta Day" },
   { "date": "Monday, July 4, 2022", "description": "Independence Day" },
   { "date": "Monday, September 5, 2022", "description": "Labor Day" },
+  { "date": "Friday, September 22, 2022", "description": "Meta Day" },
   { "date": "Thursday, November 24, 2022", "description": "Thanksgiving Day" },
   {
     "date": "Friday, November 25, 2022",
